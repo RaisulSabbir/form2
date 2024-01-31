@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  font-family: "Poppins", sans-serif;
+  background-image: url(../image/28.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position-y: 62%; */
+  height: 100vh;
+}
+
+.container {
+  max-width: 1150px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+/* Nabbar start */
+.navbar {
+}
+.navbar .brand {
+}
+.navbar .brand img {
+  width: 150px;
+}
+.navbar .flex1 {
+  display: flex;
+  justify-content: space-between;
+}
+.menu {
+  padding-top: 25px;
+}
+.menu ul {
+  list-style: none;
+}
+.menu ul li {
+  display: inline;
+  padding: 20px 15px;
+}
+.menu a {
+  text-decoration: none;
+  color: #9329ff;
+  font-size: 16px;
+  font-family: "Poppins";
+  font-weight: 500;
+  position: relative;
+}
+.menu a:after {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 3px;
+  background-color: #9f2a87;
+  left: 0;
+  bottom: -10px;
+  transition: 0.4s;
+}
+
+.menu a:hover:after {
+  width: 100%;
+}
+
+.menu ul li a:hover {
+  color: #9f2a87;
+}
+
+/* Nabbar end */
+
+/* form start */
+.head {
+}
+
+.head .flex {
+  /* gap: 20px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.head h2 {
+  font-size: 36px;
+  font-weight: 800;
+  /* text-align: center; */
+  color: white;
+}
+
+.head .full {
+  flex-basis: 40%;
+  top: 52%;
+  left: 50%;
+  padding: 30px 30px;
+}
+.form-gurop {
+  border-bottom: 3px solid #fff;
+  width: 100%;
+  height: 50px;
+  margin: 25px 0;
+  position: relative;
+}
+.form-gurop input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-weight: 300;
+  font-size: 14px;
+  padding: 20px 20px;
+  font-family: "Poppins";
+}
+input:focus ~ label,
+input:valid ~ label {
+  top: -60px;
+}
+.form-gurop label {
+  color: #fff;
+  position: relative;
+  top: -75%;
+  left: 10px;
+  transform: translateY(-50%);
+  transition: 0.5s;
+}
+.form-gurop i {
+  color: white;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+.check {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  font-family: "Poppins";
+  margin: -10px 0 10px;
+}
+
+.check label input {
+  accent-color: #fff;
+  margin-right: 4px;
+}
+.check a {
+  text-decoration: none;
+  color: #fff;
+}
+.btn {
+  width: 100%;
+  background-color: #fff;
+  border: none;
+  padding: 10px 0;
+  font-size: 20px;
+  margin: 16px 0;
+  color: #881bff;
+  font-weight: 600;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: "Poppins";
+  transition: 0.8s;
+}
+.btn:hover {
+  background-color: #881bff;
+  color: #fff;
+}
+
+.register {
+  font-size: 15px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 10px;
+  font-family: "Poppins";
+}
+
+.register a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+.register a:hover {
+  text-decoration: underline;
+}
+.check label {
+  color: #fff;
+}
+.check label input {
+  accent-color: #fff;
+  margin-right: 4px;
+}
+.pic {
+  flex-basis: 50%;
+
+  margin-right: -44px;
+}
+.pic img {
+  width: 100%;
+}
+/* Form End */
+
+/* after start */
+.effect {
+    padding-bottom: 10px;
+}
+.effect .box {
+    padding: 10px 20px;
+    position: absolute;
+    bottom: -132px;
+    right: 0px;
+    transition: 1s;
+}
+.effect .box ul {
+  list-style: none;
+  margin: 0;
+  
+ 
+}
+.effect .box ul li {
+  display: inline-block;
+  background-color: #9329ff
+  ;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  padding: 6px;
+  margin-right: 10px;
+}
+.effect .box ul li:hover{
+    background-color: #9f2a87;
+}
+.effect .box ul li a {
+}
+.effect .box ul li a i {
+  color: white;
+  font-size: 28px;
+  transition: 0.5s;
+}
+.effect .box ul li a i:hover{
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
